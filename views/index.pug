@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(class='row')
+    div(class='col')
+      h3 Data Source Configuration
+
+      table(class='table')
+        each val, key in dataSource
+          tr
+            th= key
+            td= val
+
+  div(class='row')
+    div(class='col')
+      h3 Current Region
+
+      p= region
