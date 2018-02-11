@@ -5,7 +5,10 @@ block content
     div(class='col')
       h3 Data Source Configuration
 
-      table(class='table')
+      p
+        Data Source Configuration is used to configuration a data source.
+
+      table(class='table table-striped')
         each val, key in dataSource
           tr
             th= key
@@ -16,3 +19,12 @@ block content
       h3 Current Region
 
       p= region
+
+  div(class='row')
+    div(class='col')
+      h3 Environment
+
+      table(class='table table-striped')
+        tr
+          th Hostname
+          td= hostname
